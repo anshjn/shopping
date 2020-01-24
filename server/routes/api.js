@@ -16,7 +16,7 @@ var token;
 const server = require("../../server");
 var newToken = 123456987;
 
-mongoose.connect('mongodb+srv://anshul:anshul21@shoppingportal-mdtac.mongodb.net/test?retryWrites=true&w=majority', 
+mongoose.connect('mongodb+srv://anshul:anshul21@shoppingportal-mdtac.mongodb.net/test?ssl=true&retryWrites=true&w=majority', 
                 { useUnifiedTopology: true, useCreateIndex: true, useNewUrlParser: true, dbName: 'shoppingportal' }, (err, shoppingportal) => {
     if (!err) { console.log('MongoDB Connection Succeeded.') }
     else { console.log('Error in DB connection : ' + err) }
